@@ -1,80 +1,130 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #f2f2f2;
-    text-align: center;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-header img {
-    width: 100px;
+body {
+    background-color: #1a1a1a;
+    color: #eaeaea;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 10px;
 }
 
 h1 {
     font-size: 3em;
-    color: #ffd700;
-    margin: 10px 0;
+    color: #FFD700;
 }
 
-h2 {
+.tagline {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #e0e0e0;
+}
+
+.about, .gallery, .buy {
+    margin: 30px 0;
+}
+
+.about h2, .gallery h2, .buy h2 {
     font-size: 2em;
-    color: #ffd700;
-    margin: 20px 0 10px;
+    color: #FFD700;
+    margin-bottom: 20px;
 }
 
-.polize-doge-icons {
+.about p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
+    align-items: center;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
 }
 
-.polize-doge-icons img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 10%;
+.carousel-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: fade 8s infinite;
 }
 
-button {
-    background-color: #ffd700;
-    color: #1a1a1a;
+.carousel-image:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.carousel-image:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.carousel-image:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.carousel-image:nth-child(4) {
+    animation-delay: 6s;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+    }
+    25%, 75% {
+        opacity: 1;
+    }
+}
+
+.buy ol {
+    list-style-position: inside;
+    padding: 0;
     font-size: 1.2em;
+}
+
+.buy button {
+    margin-top: 20px;
     padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #FFD700;
+    color: #1a1a1a;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
 }
 
-footer a {
-    color: #ffd700;
-    text-decoration: none;
-    margin: 0 5px;
+.buy button:hover {
+    background-color: #e0c200;
 }
 
-.funny-reel img {
-    width: 300px;
-    height: auto;
-    margin: 20px 0;
-    border-radius: 10px;
-    border: 2px solid #ffd700;
-}
-
-.flashing-section {
+footer {
     margin-top: 30px;
+    padding: 20px;
+    background-color: #333;
 }
 
-.flashing-section img {
-    width: 200px;
-    height: auto;
-    border: 3px solid #ffd700;
-    border-radius: 50%;
-    animation: flash 1s infinite alternate;
+.social-links {
+    margin-top: 10px;
 }
 
-@keyframes flash {
-    from { opacity: 1; }
-    to { opacity: 0.5; }
+.social-links a {
+    margin: 0 10px;
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 1.2em;
 }
