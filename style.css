@@ -1,0 +1,125 @@
+/* Resetting default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1b;
+    color: #f3f3f3;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2a2a2a;
+    color: #ffd700;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+header h2 {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.about, .how-to-buy {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2, .how-to-buy h2 {
+    font-size: 2em;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.icon-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.icon-gallery img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid #ffd700;
+    transition: transform 0.3s ease;
+}
+
+.icon-gallery img:hover {
+    transform: scale(1.1);
+}
+
+.how-to-buy ol {
+    list-style: decimal;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #cccccc;
+    text-align: left;
+}
+
+.how-to-buy li {
+    margin: 10px 0;
+}
+
+.buy-now {
+    background-color: #ffd700;
+    color: #1b1b1b;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #ffcc00;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2a2a2a;
+    color: #888888;
+    font-size: 0.9em;
+}
+
+.social-links a {
+    color: #ffd700;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+}
