@@ -1,59 +1,10 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #1a1a1a;
-    color: #eaeaea;
-    text-align: center;
-}
-
-header {
-    padding: 20px;
-}
-
-.logo {
-    width: 150px;
-    margin-bottom: 10px;
-}
-
-h1 {
-    font-size: 3em;
-    color: #FFD700;
-}
-
-.tagline {
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #e0e0e0;
-}
-
-.about, .gallery, .buy {
-    margin: 30px 0;
-}
-
-.about h2, .gallery h2, .buy h2 {
-    font-size: 2em;
-    color: #FFD700;
-    margin-bottom: 20px;
-}
-
-.about p {
-    font-size: 1.2em;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 .carousel {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     margin: 0 auto;
     position: relative;
 }
@@ -73,46 +24,3 @@ h1 {
 .carousel-image:nth-child(5) { animation-delay: 8s; }
 .carousel-image:nth-child(6) { animation-delay: 10s; }
 .carousel-image:nth-child(7) { animation-delay: 12s; }
-
-@keyframes fade {
-    0%, 100% { opacity: 0; }
-    25%, 75% { opacity: 1; }
-}
-
-.buy ol {
-    list-style-position: inside;
-    padding: 0;
-    font-size: 1.2em;
-}
-
-.buy button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    background-color: #FFD700;
-    color: #1a1a1a;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.buy button:hover {
-    background-color: #e0c200;
-}
-
-footer {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #333;
-}
-
-.social-links {
-    margin-top: 10px;
-}
-
-.social-links a {
-    margin: 0 10px;
-    color: #FFD700;
-    text-decoration: none;
-    font-size: 1.2em;
-}
