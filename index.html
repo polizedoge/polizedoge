@@ -8,6 +8,15 @@
 </head>
 <body class="background">
 
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#how-to-buy">How to Buy</a>
+        <a href="#mission">Mission</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#white-paper">Whitepaper</a>
+    </nav>
+
     <!-- Main Logo and Title -->
     <header class="siren-effect">
         <img src="icons/main.jpg" alt="Polizei Doge Logo" class="main-logo">
@@ -16,19 +25,20 @@
     </header>
 
     <!-- About Section -->
-    <section class="about watermark">
+    <section id="about" class="about watermark">
         <h2>About Polizei Doge</h2>
         <p>Polizei Doge is a meme coin inspired by legendary police dogs, built for the community with low transaction fees and a strong anti-scam ethos. Join the pack today!</p>
         <div class="carousel">
             <img src="icons/main1.jpg" alt="Polizei Doge Icon 1">
             <img src="icons/main2.jpg" alt="Polizei Doge Icon 2">
             <img src="icons/main3.jpg" alt="Polizei Doge Icon 3">
-            <img src="icons/main4.jpg" alt="Polizei Doge Icon 4">
+            <img src="icons/funny1.jpg" alt="Funny Polizei Doge">
+            <img src="icons/flash1.jpg" alt="Flashing Polizei Doge">
         </div>
     </section>
 
     <!-- How to Buy Section -->
-    <section class="how-to-buy">
+    <section id="how-to-buy" class="how-to-buy">
         <h2>How to Join the Polizei Pack</h2>
         <ol>
             <li>Download MetaMask and set up your wallet.</li>
@@ -40,13 +50,13 @@
     </section>
 
     <!-- Mission Section -->
-    <section class="mission">
+    <section id="mission" class="mission">
         <h2>Our Mission</h2>
         <p>Loyalty, Security, Transparency, and Strength in Unity. Polizei Doge is here to build a trusted network of vigilant, loyal users. Together, we protect the pack from fraud and deception, creating a safe space for investment.</p>
     </section>
 
     <!-- Roadmap Section -->
-    <section class="roadmap">
+    <section id="roadmap" class="roadmap">
         <h2>Roadmap</h2>
         <ul>
             <li><strong>Q1 2024 - Initial Launch:</strong> Introduce Polizei Doge to the community.</li>
@@ -56,12 +66,13 @@
         </ul>
     </section>
 
-    <!-- White Paper Section -->
-    <section class="white-paper">
+    <!-- White Paper Section with Download Link -->
+    <section id="white-paper" class="white-paper">
         <h2>White Paper</h2>
         <p><strong>Abstract:</strong> A meme coin focused on community trust, security, and transparency.</p>
         <p><strong>Problem Statement:</strong> Issues with scams, rug pulls, and lack of oversight in crypto.</p>
         <p><strong>Our Solution:</strong> Building a loyal, scam-free community.</p>
+        <a href="whitepaper.pdf" download="PolizeiDoge_Whitepaper.pdf" class="download-button">Download White Paper</a>
     </section>
 
     <!-- Footer with Social Links -->
@@ -72,5 +83,17 @@
             <a href="https://telegram.org/polizedoge" target="_blank">Telegram</a>
         </div>
     </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>

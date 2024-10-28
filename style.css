@@ -6,6 +6,29 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #ffd600;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff3e00;
+}
+
 /* Background and Main Theme */
 .background {
     background: linear-gradient(to bottom, #0d47a1, #212121);
@@ -14,6 +37,7 @@
     padding: 20px;
 }
 
+/* Watermark for Sections */
 .watermark {
     background-image: url('icons/badge.png');
     background-repeat: no-repeat;
@@ -22,6 +46,7 @@
     opacity: 0.95;
 }
 
+/* Police Siren Flash Effect */
 .siren-effect {
     animation: flash 1s infinite alternate;
 }
@@ -31,7 +56,7 @@
     to { box-shadow: 0 0 10px blue; }
 }
 
-/* Header */
+/* Header Section */
 .main-logo {
     width: 150px;
     height: auto;
@@ -59,88 +84,145 @@
 }
 
 .carousel img {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* How to Buy Section */
-.how-to-buy {
-    background: #424242;
+/* Section Titles */
+h2 {
+    font-size: 2rem;
     color: #ffd600;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px 0;
+    text-shadow: 1px 1px 3px black;
+    margin-bottom: 10px;
 }
 
-.how-to-buy h2 {
-    font-size: 2rem;
+/* About Section */
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* How to Buy Section */
+.how-to-buy {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    color: #fff;
 }
 
 .how-to-buy ol {
     text-align: left;
-    margin: 20px auto;
-    width: fit-content;
-    color: #fff;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.how-to-buy ol li {
+    margin: 10px 0;
+    font-size: 1.1rem;
 }
 
 .buy-button {
     background-color: #ffd600;
     color: #333;
-    border: none;
     padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
+    border: none;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px yellow;
-    transition: transform 0.3s ease;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
 }
 
 .buy-button:hover {
-    transform: scale(1.1);
+    background-color: #ff3e00;
 }
 
 /* Mission Section */
 .mission {
-    margin: 20px 0;
-}
-
-.mission h2 {
-    font-size: 2.5rem;
+    padding: 30px;
+    background: #212121;
     color: #ffd600;
-    text-shadow: 1px 1px 2px #000;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
 }
 
-/* Roadmap and White Paper Sections */
-.roadmap, .white-paper {
-    background-color: #333;
-    color: #fff;
+.mission p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Roadmap Section */
+.roadmap {
+    background-color: #2e2e2e;
+    color: #ffd600;
     padding: 20px;
-    border-radius: 8px;
-    margin: 20px 0;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
 }
 
-.roadmap ul, .white-paper p {
-    text-align: left;
-    max-width: 600px;
-    margin: 10px auto;
+.roadmap ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.roadmap ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    text-shadow: 0 0 3px black;
+}
+
+/* White Paper Section */
+.white-paper {
+    padding: 30px;
+    background-color: #333;
+    color: #ffd600;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffd600;
+    color: #333;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #ff3e00;
 }
 
 /* Footer */
 footer {
-    background-color: #222;
-    padding: 10px 0;
-    color: #bbb;
+    background-color: #111;
+    color: #ffd600;
+    padding: 20px;
+    text-align: center;
     font-size: 0.9rem;
 }
 
-.social-links a {
+footer .social-links a {
     color: #ffd600;
-    margin: 0 10px;
     text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
-.social-links a:hover {
-    text-decoration: underline;
+footer .social-links a:hover {
+    color: #ff3e00;
 }
