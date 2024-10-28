@@ -62,7 +62,7 @@
     margin: 10px 0 20px;
 }
 
-/* Carousel */
+/* Carousel Section */
 .carousel {
     display: flex;
     justify-content: center;
@@ -73,13 +73,14 @@
 .carousel img {
     width: 400px;
     height: 400px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
 }
 
-.fade {
+.carousel img.fade {
     opacity: 1;
 }
 
