@@ -37,9 +37,16 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
         .button:hover {
             background-color: #005bb5;
+        }
+        .social-button {
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
         }
         footer {
             background-color: #333;
@@ -48,6 +55,11 @@
             padding: 20px;
             margin-top: 40px;
         }
+        .icon {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -55,10 +67,12 @@
 <header>
     <h1>Polize Doge</h1>
     <p>The Legendary Doge Coin You've Been Waiting For!</p>
+    <img src="path/to/icon1.webp" alt="Polize Doge Icon" class="icon"> <!-- Replace with actual image path -->
 </header>
 
 <section class="section">
     <h2>About Polize Doge</h2>
+    <img src="path/to/icon2.webp" alt="Polize Doge Icon" class="icon"> <!-- Replace with actual image path -->
     <p>Polize Doge is a meme coin inspired by legendary police dogs, built for the community with low transaction fees and huge meme potential. Join the pack today!</p>
 </section>
 
@@ -71,8 +85,8 @@
 <section class="section">
     <h2>Join Our Community</h2>
     <p>Follow us on Telegram and Twitter to stay updated!</p>
-    <button class="button">Join Telegram</button>
-    <button class="button">Follow on Twitter</button>
+    <a href="https://t.me/PolizeDoge" class="social-button button">Join Telegram</a>
+    <a href="https://x.com/PolizeDoge" class="social-button button">Follow on Twitter</a>
 </section>
 
 <footer>
