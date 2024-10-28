@@ -6,57 +6,38 @@
     <title>Polizei Doge</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="background">
-
-    <!-- Navigation Menu -->
-    <nav class="navbar">
-        <a href="#about">About</a>
-        <a href="#how-to-buy">How to Buy</a>
-        <a href="#mission">Mission</a>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#mission">Our Mission</a>
         <a href="#roadmap">Roadmap</a>
-        <a href="#white-paper">Whitepaper</a>
-    </nav>
+        <a href="#whitepaper">White Paper</a>
+    </div>
 
-    <!-- Main Logo and Title -->
-    <header class="siren-effect">
+    <!-- Main Section with Polizei Doge Theme -->
+    <div class="background watermark siren-effect">
         <img src="icons/main.jpg" alt="Polizei Doge Logo" class="main-logo">
         <h1 class="polizei-header">Polizei Doge</h1>
-        <p class="tagline">The Legendary Doge Coin You've Been Waiting For!</p>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="about watermark">
-        <h2>About Polizei Doge</h2>
-        <p>Polizei Doge is a meme coin inspired by legendary police dogs, built for the community with low transaction fees and a strong anti-scam ethos. Join the pack today!</p>
-        <div class="carousel">
-            <img src="icons/main1.jpg" alt="Polizei Doge Icon 1">
-            <img src="icons/main2.jpg" alt="Polizei Doge Icon 2">
-            <img src="icons/main3.jpg" alt="Polizei Doge Icon 3">
-            <img src="icons/funny1.jpg" alt="Funny Polizei Doge">
-            <img src="icons/flash1.jpg" alt="Flashing Polizei Doge">
-        </div>
-    </section>
-
-    <!-- How to Buy Section -->
-    <section id="how-to-buy" class="how-to-buy">
-        <h2>How to Join the Polizei Pack</h2>
-        <ol>
-            <li>Download MetaMask and set up your wallet.</li>
-            <li>Transfer ETH or BNB to your wallet.</li>
-            <li>Connect to Uniswap or PancakeSwap.</li>
-            <li>Swap for <strong>Polizei Doge</strong> and become part of the community.</li>
-        </ol>
-        <button class="buy-button">Buy Now</button>
-    </section>
+        <p class="tagline">The Loyal Pack You Can Trust</p>
+    </div>
 
     <!-- Mission Section -->
-    <section id="mission" class="mission">
+    <section id="mission">
         <h2>Our Mission</h2>
         <p>Loyalty, Security, Transparency, and Strength in Unity. Polizei Doge is here to build a trusted network of vigilant, loyal users. Together, we protect the pack from fraud and deception, creating a safe space for investment.</p>
     </section>
 
+    <!-- Carousel of Polizei Doge Icons -->
+    <div class="carousel">
+        <img src="icons/main1.jpg" alt="Polizei Doge Icon 1">
+        <img src="icons/main2.jpg" alt="Polizei Doge Icon 2">
+        <img src="icons/main3.jpg" alt="Polizei Doge Icon 3">
+        <img src="icons/funny1.jpg" alt="Polizei Doge Funny Icon">
+        <img src="icons/flash1.jpg" alt="Polizei Doge Flash Icon">
+    </div>
+
     <!-- Roadmap Section -->
-    <section id="roadmap" class="roadmap">
+    <section id="roadmap">
         <h2>Roadmap</h2>
         <ul>
             <li><strong>Q1 2024 - Initial Launch:</strong> Introduce Polizei Doge to the community.</li>
@@ -66,34 +47,14 @@
         </ul>
     </section>
 
-    <!-- White Paper Section with Download Link -->
-    <section id="white-paper" class="white-paper">
+    <!-- White Paper Section -->
+    <section id="whitepaper">
         <h2>White Paper</h2>
         <p><strong>Abstract:</strong> A meme coin focused on community trust, security, and transparency.</p>
         <p><strong>Problem Statement:</strong> Issues with scams, rug pulls, and lack of oversight in crypto.</p>
         <p><strong>Our Solution:</strong> Building a loyal, scam-free community.</p>
-        <a href="whitepaper.pdf" download="PolizeiDoge_Whitepaper.pdf" class="download-button">Download White Paper</a>
+        <a href="polizei_doge_whitepaper.pdf" download>Download White Paper</a>
     </section>
 
-    <!-- Footer with Social Links -->
-    <footer>
-        <p>&copy; 2024 Polizei Doge. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://twitter.com/polizedoge" target="_blank">Twitter</a>
-            <a href="https://telegram.org/polizedoge" target="_blank">Telegram</a>
-        </div>
-    </footer>
-
-    <!-- Smooth Scrolling Script -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>

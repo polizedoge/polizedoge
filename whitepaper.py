@@ -63,4 +63,10 @@ pdf.ln(20)
 # Closing Statement
 pdf.set_font("Arial", "B", 14)
 pdf.cell(200, 10, "Join Us", ln=True)
-pdf.set
+pdf.set_font("Arial", "", 12)
+pdf.multi_cell(0, 10, "Join the Polizei Doge community to be part of a safe, transparent, and loyal crypto experience. "
+                     "Together, we can make a positive difference in the cryptocurrency world and build a legacy based "
+                     "on trust and integrity.")
+
+# Save the file locally
+pdf.output("polizei_doge_whitepaper.pdf")
