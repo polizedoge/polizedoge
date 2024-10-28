@@ -1,125 +1,127 @@
-/* Resetting default styling */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: Arial, sans-serif;
-    background-color: #1b1b1b;
-    color: #f3f3f3;
-    line-height: 1.6;
 }
 
+/* Body Styling */
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Section */
 header {
     text-align: center;
-    padding: 20px;
-    background-color: #2a2a2a;
-    color: #ffd700;
+    margin-top: 20px;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.logo img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+h1 {
+    font-size: 2.5rem;
+    color: #f4d03f;
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin: 10px 0;
+.tagline {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f0e68c;
 }
 
-header h2 {
-    font-size: 1.2em;
-    color: #ffffff;
-    margin: 10px 0;
-}
-
-.about, .how-to-buy {
-    padding: 40px 20px;
+/* About Section */
+.about {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px 0;
     text-align: center;
 }
 
-.about h2, .how-to-buy h2 {
-    font-size: 2em;
-    color: #ffd700;
+h2 {
+    font-size: 2rem;
+    color: #f4d03f;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
     margin-bottom: 20px;
+    color: #ccc;
 }
 
-.about p {
-    max-width: 600px;
-    margin: 0 auto 20px;
-}
-
+/* Icon Gallery */
 .icon-gallery {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
-.icon-gallery img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    border: 2px solid #ffd700;
-    transition: transform 0.3s ease;
+.dog-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: transform 0.3s;
 }
 
-.icon-gallery img:hover {
+.dog-icon:hover {
     transform: scale(1.1);
 }
 
-.how-to-buy ol {
-    list-style: decimal;
-    padding: 0;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #cccccc;
-    text-align: left;
-}
-
-.how-to-buy li {
-    margin: 10px 0;
-}
-
-.buy-now {
-    background-color: #ffd700;
-    color: #1b1b1b;
-    padding: 15px 30px;
-    border: none;
-    font-size: 1.1em;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.buy-now:hover {
-    background-color: #ffcc00;
-}
-
-footer {
+/* Buy Section */
+.buy {
+    width: 90%;
+    max-width: 800px;
     text-align: center;
+    background-color: #333;
     padding: 20px;
-    background-color: #2a2a2a;
-    color: #888888;
-    font-size: 0.9em;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.buy-button {
+    background-color: #f4d03f;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #e0c529;
+}
+
+/* Footer Section */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    margin-top: 10px;
 }
 
 .social-links a {
-    color: #ffd700;
-    margin: 0 10px;
+    color: #f4d03f;
     text-decoration: none;
-    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #ffcc00;
+    color: #e0c529;
 }
