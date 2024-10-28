@@ -34,14 +34,6 @@
     padding: 20px;
 }
 
-.watermark {
-    background-image: url('icons/badge.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 200px;
-    opacity: 0.95;
-}
-
 .siren-effect {
     animation: flash 1s infinite alternate;
 }
@@ -79,57 +71,53 @@
 }
 
 .carousel img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Additional Styling for Sections */
-section {
-    padding: 20px;
-    text-align: center;
-    background: #333;
-    color: #fff;
-    margin: 20px 0;
+    width: 400px;
+    height: 400px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
 }
 
-h2 {
+.fade {
+    opacity: 1;
+}
+
+/* Mission Section */
+#mission {
+    background: #333;
     color: #ffd600;
-    text-shadow: 1px 1px 3px black;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Roadmap and White Paper Sections */
+.section-title {
     font-size: 2rem;
-}
-
-p, li {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #ddd;
-}
-
-a {
     color: #ffd600;
-    text-decoration: none;
-    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
 }
 
-a:hover {
-    color: #ff3e00;
+.mission-text, ul {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin: 20px 0;
 }
 
-/* Button Styling */
-button {
-    background-color: #ffd600;
-    color: #333;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 15px 0;
     font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #ff3e00;
-    color: #fff;
+#whitepaper a {
+    color: #ff3e00;
+    font-weight: bold;
+    text-decoration: none;
+}
+#whitepaper a:hover {
+    color: #ffd600;
 }
