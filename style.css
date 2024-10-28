@@ -7,12 +7,8 @@ body {
     padding: 0;
 }
 
-header {
-    margin: 20px 0;
-}
-
 header img {
-    width: 100px; /* Adjust logo size if needed */
+    width: 100px;
 }
 
 h1 {
@@ -27,10 +23,6 @@ h2 {
     margin: 20px 0 10px;
 }
 
-section {
-    margin: 20px 0;
-}
-
 .polize-doge-icons {
     display: flex;
     justify-content: center;
@@ -39,8 +31,8 @@ section {
 }
 
 .polize-doge-icons img {
-    width: 100px; /* Fixed width for icons */
-    height: 100px; /* Fixed height for icons */
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 10%;
 }
@@ -56,18 +48,33 @@ button {
     margin-top: 20px;
 }
 
-footer {
-    margin-top: 30px;
-    font-size: 0.8em;
-    color: #aaaaaa;
-}
-
 footer a {
     color: #ffd700;
     text-decoration: none;
     margin: 0 5px;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.funny-reel img {
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 2px solid #ffd700;
+}
+
+.flashing-section {
+    margin-top: 30px;
+}
+
+.flashing-section img {
+    width: 200px;
+    height: auto;
+    border: 3px solid #ffd700;
+    border-radius: 50%;
+    animation: flash 1s infinite alternate;
+}
+
+@keyframes flash {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
 }
