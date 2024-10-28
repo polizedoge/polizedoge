@@ -1,3 +1,65 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #f0f0f0;
+    background-color: #1a1a1a;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    background: linear-gradient(90deg, #ff0000 50%, #0000ff 50%);
+    background-size: 200% 100%;
+    animation: siren-flash 2s infinite;
+}
+
+@keyframes siren-flash {
+    0% { background-position: 0% 0; }
+    50% { background-position: 100% 0; }
+    100% { background-position: 0% 0; }
+}
+
+.main-logo {
+    width: 200px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ffd700; /* Gold */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.about, .mission, .how-to-buy {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: #333333;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #ffd700; /* Gold */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
 .carousel {
     display: flex;
     justify-content: center;
@@ -5,7 +67,7 @@
     overflow: hidden;
     width: 400px;
     height: 400px;
-    margin: 0 auto;
+    margin: 20px auto;
     position: relative;
 }
 
@@ -15,6 +77,8 @@
     height: 100%;
     opacity: 0;
     animation: fade 14s infinite;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.5), 0px 0px 15px rgba(0, 0, 255, 0.5);
 }
 
 .carousel-image:nth-child(1) { animation-delay: 0s; }
@@ -22,5 +86,43 @@
 .carousel-image:nth-child(3) { animation-delay: 4s; }
 .carousel-image:nth-child(4) { animation-delay: 6s; }
 .carousel-image:nth-child(5) { animation-delay: 8s; }
-.carousel-image:nth-child(6) { animation-delay: 10s; }
-.carousel-image:nth-child(7) { animation-delay: 12s; }
+
+@keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    40% { opacity: 0; }
+}
+
+.mission, .how-to-buy {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.buy-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #1a1a1a;
+    background-color: #ffd700; /* Gold */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.7);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    background-color: #111111;
+    color: #bfbfbf;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
