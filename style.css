@@ -1,7 +1,8 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    color: #FFD700;
-    background-color: #222;
+    background-color: #1e1e1e;
+    color: #ffffff;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -11,61 +12,74 @@ header {
     padding: 20px;
 }
 
-.logo {
+header .logo {
     width: 100px;
     height: auto;
 }
 
 h1 {
     font-size: 2.5em;
-    margin: 0;
-    color: #FFD700;
+    color: #ffd700;
 }
 
-.subtitle {
-    font-style: italic;
-    color: #FFF;
+p {
+    color: #d3d3d3;
 }
 
-.about, .how-to-buy {
-    padding: 20px;
-    margin: 20px auto;
-    background-color: #333;
-    border-radius: 8px;
-    max-width: 800px;
+.about h2, .buy h2 {
+    color: #ffd700;
 }
 
-.icon-container {
+/* Polize Dog Icons Styling */
+.polize-doge-icons {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 15px;
+    gap: 20px;
+    margin-top: 10px;
 }
 
-.icon {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
+.polize-doge-icons .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
 }
 
-.how-to-buy button {
-    background-color: #FFD700;
-    border: none;
+/* Buy Section */
+.buy {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.buy ol {
+    list-style: none;
+    padding: 0;
+}
+
+.buy li {
+    margin: 10px 0;
+}
+
+.buy button {
     padding: 10px 20px;
     font-size: 1em;
+    background-color: #ffd700;
+    color: #333333;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
+/* Footer */
 footer {
-    padding: 15px;
+    margin-top: 20px;
     font-size: 0.9em;
-    color: #888;
 }
 
-.social-links a {
-    color: #FFD700;
+footer a {
+    color: #ffd700;
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 10px;
 }
