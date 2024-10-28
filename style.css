@@ -1,128 +1,146 @@
-/* Basic Reset */
+/* Reset and Basic Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Arial', sans-serif;
-    color: #f0f0f0;
-    background-color: #1a1a1a;
 }
 
-header {
+/* Background and Main Theme */
+.background {
+    background: linear-gradient(to bottom, #0d47a1, #212121);
+    color: #fff;
     text-align: center;
     padding: 20px;
-    position: relative;
-    background: linear-gradient(90deg, #ff0000 50%, #0000ff 50%);
-    background-size: 200% 100%;
-    animation: siren-flash 2s infinite;
 }
 
-@keyframes siren-flash {
-    0% { background-position: 0% 0; }
-    50% { background-position: 100% 0; }
-    100% { background-position: 0% 0; }
+.watermark {
+    background-image: url('icons/badge.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+    opacity: 0.95;
 }
 
+.siren-effect {
+    animation: flash 1s infinite alternate;
+}
+
+@keyframes flash {
+    from { box-shadow: 0 0 10px red; }
+    to { box-shadow: 0 0 10px blue; }
+}
+
+/* Header */
 .main-logo {
-    width: 200px;
+    width: 150px;
     height: auto;
-    margin: 0 auto 20px;
+    margin: 20px 0;
 }
 
-h1 {
-    font-size: 3em;
-    color: #ffd700; /* Gold */
-    text-transform: uppercase;
-    margin-bottom: 10px;
+.polizei-header {
+    font-size: 3rem;
+    color: #ffd600;
+    text-shadow: 2px 2px 5px black, 0 0 10px blue;
+    font-family: 'Impact', sans-serif;
 }
 
 .tagline {
-    font-size: 1.2em;
-    color: #ffffff;
-    font-style: italic;
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
 }
 
-.about, .mission, .how-to-buy {
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    background-color: #333333;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-}
-
-h2 {
-    color: #ffd700; /* Gold */
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
+/* Carousel */
 .carousel {
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 400px;
-    height: 400px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.carousel img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* How to Buy Section */
+.how-to-buy {
+    background: #424242;
+    color: #ffd600;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.how-to-buy h2 {
+    font-size: 2rem;
+}
+
+.how-to-buy ol {
+    text-align: left;
     margin: 20px auto;
-    position: relative;
-}
-
-.carousel-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    animation: fade 14s infinite;
-    border-radius: 50%;
-    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.5), 0px 0px 15px rgba(0, 0, 255, 0.5);
-}
-
-.carousel-image:nth-child(1) { animation-delay: 0s; }
-.carousel-image:nth-child(2) { animation-delay: 2s; }
-.carousel-image:nth-child(3) { animation-delay: 4s; }
-.carousel-image:nth-child(4) { animation-delay: 6s; }
-.carousel-image:nth-child(5) { animation-delay: 8s; }
-
-@keyframes fade {
-    0% { opacity: 0; }
-    20% { opacity: 1; }
-    40% { opacity: 0; }
-}
-
-.mission, .how-to-buy {
-    font-size: 1.1em;
-    line-height: 1.5;
+    width: fit-content;
+    color: #fff;
 }
 
 .buy-button {
-    padding: 15px 30px;
-    font-size: 1.2em;
-    color: #1a1a1a;
-    background-color: #ffd700; /* Gold */
+    background-color: #ffd600;
+    color: #333;
     border: none;
-    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
     cursor: pointer;
-    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.7);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px yellow;
+    transition: transform 0.3s ease;
 }
 
+.buy-button:hover {
+    transform: scale(1.1);
+}
+
+/* Mission Section */
+.mission {
+    margin: 20px 0;
+}
+
+.mission h2 {
+    font-size: 2.5rem;
+    color: #ffd600;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Roadmap and White Paper Sections */
+.roadmap, .white-paper {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.roadmap ul, .white-paper p {
+    text-align: left;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 10px;
-    font-size: 0.9em;
-    background-color: #111111;
-    color: #bfbfbf;
+    background-color: #222;
+    padding: 10px 0;
+    color: #bbb;
+    font-size: 0.9rem;
 }
 
-footer a {
-    color: #ffd700;
-    text-decoration: none;
+.social-links a {
+    color: #ffd600;
     margin: 0 10px;
+    text-decoration: none;
 }
 
-footer a:hover {
+.social-links a:hover {
     text-decoration: underline;
 }

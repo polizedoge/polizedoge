@@ -1,0 +1,169 @@
+/* Global Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background-color: #222;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 3em;
+    color: #ffd700; /* Gold police badge color */
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffb700;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/* Mission Section */
+.mission {
+    padding: 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+.mission-title {
+    font-size: 2.5em;
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffeb3b, 0 0 10px #ffeb3b;
+}
+
+.mission-text {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6em;
+    color: #ddd;
+}
+
+/* Carousel */
+.icons-carousel {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #444;
+}
+
+.carousel {
+    display: flex;
+    gap: 15px;
+    animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-50%); }
+}
+
+.icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ffd700;
+}
+
+/* Features */
+.features {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.features-title {
+    font-size: 2.5em;
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.features-list li {
+    margin: 10px 0;
+    color: #ddd;
+}
+
+/* Join Section */
+.join {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.join-title {
+    font-size: 2.5em;
+    color: #ffd700;
+}
+
+.join-steps {
+    display: inline-block;
+    text-align: left;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ffeb3b;
+}
+
+.join-steps ol {
+    margin: 0;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.highlight {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.buy-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #222;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #000;
+    box-shadow: 0 0 10px #ffeb3b;
+}
+
+.buy-button:hover {
+    background-color: #ffeb3b;
+}
+
+/* Footer */
+.footer {
+    padding: 15px;
+    background-color: #222;
+    text-align: center;
+}
+
+.social-links a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.social-links a:hover {
+    color: #ffeb3b;
+}
