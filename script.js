@@ -1,17 +1,12 @@
-<script>
+// Carousel Fade Animation
+const carouselImages = document.querySelectorAll('.carousel-image');
 let currentIndex = 0;
-const images = document.querySelectorAll('.carousel img');
 
 function showNextImage() {
-    images.forEach((img, index) => {
-        img.classList.remove('fade');
-        img.style.opacity = '0';
+    carouselImages.forEach((img, index) => {
+        img.style.opacity = index === currentIndex ? '1' : '0';
     });
-    images[currentIndex].classList.add('fade');
-    images[currentIndex].style.opacity = '1';
-    currentIndex = (currentIndex + 1) % images.length;
+    currentIndex = (currentIndex + 1) % carouselImages.length;
 }
 
-setInterval(showNextImage, 3000); // Adjust the interval as needed
-showNextImage(); // Initial call
-</script>
+setInterval(showNextImage, 3000);
